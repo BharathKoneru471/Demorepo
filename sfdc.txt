@@ -1,0 +1,143 @@
+Account Acc = new Account();
+Acc.Name = 'ravi';
+Acc.Phone = 1223345556;
+insert Acc;
+Contact con = new Contact();
+Con.LastName = 'lalam';
+insert Con;
+Con.AccountID = Acc.ID;
+-------------------------------------
+
+string[] str = new string[4];
+str[0] = 'turmeric';
+str[1] = 'Coriandor';
+str[2] = 'cumin';
+str[3] = 'Black pepper';
+
+system.debug('str value:'+str);
+
+string[] strnew = new string[3];
+strnew = str;
+system.debug('str value:'+strnew);
+
+-----------------------------------------------
+
+Account[] Arr = new Account[2];
+Account a1 = new Account ();
+Account a2 = new Account ();
+Account a3 = new Account ();
+a1.Name='satish';
+a1.Phone = '12222222222';
+a2.Name='lalam';
+a2.Phone= '1222225555522';
+a3.Name='kumar';
+a3.Phone= '1228888822222';
+Arr[0] = a1;
+Arr[1] = a2;
+Arr[2] = a3;
+insert Arr;
+
+==========================================
+
+list<string> strlist = new list<string>();
+strlist.add('hari');
+strlist.add('sita');
+strlist.add('gita');
+strlist.add('surpanaka');
+
+system.debug('list element:'+strlist);
+system.debug('list element:'+strlist.size());
+system.debug('list element:'+strlist[0]);
+
+
+=============================================
+
+list<string> strlist = new list<string>();
+strlist.add('hari');
+strlist.add('sita');
+strlist.add('gita');
+strlist.add('surpanaka');
+
+system.debug('list element:'+strlist);
+system.debug('list element:'+strlist.size());
+system.debug('list element:'+strlist[0]);
+
+string y = strlist.get(1);
+
+system.debug('list element:'+y);
+
+================================
+list<string> strlist = new list<string>();
+strlist.add('hari');
+strlist.add('sita');
+strlist.add('gita');
+strlist.add('surpanaka');
+
+system.debug('list element:'+strlist);
+system.debug('list element:'+strlist.size());
+system.debug('list element:'+strlist[0]);
+
+string y = strlist.get(1);
+
+system.debug('list element:'+y);
+
+list<string> strnewlist = new list<string>();
+strnewlist=strlist;
+system.debug('strnewlist:'+strnewlist);
+
+
+
+
+========================================
+
+list<string> strlist = new list<string>();
+strlist.add('hari');
+strlist.add('sita');
+strlist.add('gita');
+strlist.add('surpanaka');
+
+system.debug('list element:'+strlist);
+system.debug('list element:'+strlist.size());
+system.debug('list element:'+strlist[0]);
+
+string y = strlist.get(1);
+
+system.debug('list element:'+y);
+
+list<string> strnewlist = new list<string>();
+strnewlist=strlist;
+system.debug('strnewlist:'+strnewlist);
+strnewlist.addall(strlist);
+system.debug('strnewlist2:'+strlist);
+
+==============================================
+
+list<string> strlist = new list<string>();
+strlist.add('hari');
+strlist.add('sita');
+strlist.add('gita');
+strlist.add('surpanaka');
+
+system.debug('list element:'+strlist);
+strlist.add(2,'laxman');
+system.debug('list element:'+strlist);
+list<string> strlist = new list<string>();
+strlist.add('hari');
+strlist.add('sita');
+strlist.add('gita');
+strlist.add('surpanaka');
+
+system.debug('list element:'+strlist);
+set<string> strset = new set<string>();
+strset.add('hari');
+strset.add('sita');
+strset.add('hari');
+strset.add('gita');
+strset.add('surpanaka');
+system.debug('list element:'+strset);
+
+============================================
+
+
+
+
